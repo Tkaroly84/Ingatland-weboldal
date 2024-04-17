@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <!-- Navigáció -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <h2 class="tarsashazkezelesLogo">Társasházkezelés</h2>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <button id="bejelentkezes_ikon" onclick="bejelentkezes()"><svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" width="24" height="24">
+        <path
+          d="M22 4.25a.75.75 0 0 0-1.5 0v15a.75.75 0 0 0 1.5 0v-15Zm-9.72 14.28a.75.75 0 1 1-1.06-1.06l4.97-4.97H1.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.75.75 0 0 1 1.06-1.06l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25Z">
+        </path>
+      </svg> </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="rolunk.html">Rólunk</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModalLong">Tevékenységeink</a>
+        </li>
+        <!--
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Szolgáltatások
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Társasházkezelés</a>
+                <a class="dropdown-item" href="#">Bérszámfejtés</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Jogi képviselet</a>
+              </div>
+            </li>-->
+      </ul>
+      <h5 id="bejelentkezes_info">Egyéni- és társasházi adatok elérése: </h5>
+      <button id="bejelentkezes" type="button" class="btn btn-primary" onclick="bejelentkezes()">Bejelentkezés</button>
+    </div>
+  </nav><br><br>
+
+  <!-- Carousel -->
+
+
+  <div class="sajátpróba">
+    <div class="egy">
+      <img src="Képek_videók/qr_kód.png" alt="QR qr_kód">
+      <p>Osszon meg minket ismerőseivel, vagy mentse el az oldalt, a könyvjelzők közé...</p>
+      <p>Qr-kód letöltése:<a href="Képek_videók/qr_kód.png" download="Társasházkezelés_QR_kód">KATT ide!</a></p>
+    </div>
+    <div class="ketto">
+      <img src="Képek_videók/IMG_3603.jpeg" alt="">
+    </div>
+    <div class="harom">
+      <h3>Meghibásodás esetén:</h3><br><br>
+      <p>Duguláselhárítás, gázkészülék szerelés: <a href="tel:+36703914141">+3670/3914141</a></p>
+      <p>Víz-csatorna-villany gyorsszolgálat: <a href="tel:+36202722222">+36/202722222</a></p>
+      <p>Közösképviselet:<a href="tel:+3613636453">+36/13636453</a></p>
+      <p>Gázművek:<a href="tel:+36704749999">+36/704749999</a></p>
+      <p>ELMÜ:<a href="tel:+3612383838">+36/12383838</a></p>
+    </div>
+  </div>
+
+  <!-- Ügyfélfogadás -->
+
+  <div class="ugyfelfogadas">
+    <h4>Ügyfélfogadási idő:</h4>
+    <p>Irodánkban hétfőn, délután 13 - 17 óráig és csütörtök délelőtt, 8 - 12 óráig fogadóórát tartunk.</p>
+  </div>
+
+<!-- Footer -->
+
+<div class="card text-center">
+  <div class="card-header">Elérhetőségeink:</div>
+  <div class="card-body"  style="background-color: beige;">
+    <h5 class="card-title">Társasházkezelés</h5>
+    <p class="card-text">Címünk: <a href="https://www.google.com/maps/place/Budapest,+Gyerty%C3%A1n+u.+18,+1146/@47.5145494,19.1049084,17z/data=!3m1!4b1!4m6!3m5!1s0x4741db7cbd6e625f:0xb112bbc76927fd8!8m2!3d47.5145494!4d19.1049084!16s%2Fg%2F11j6zkdpdt?entry=ttu">1146 Budapest, Gyertyán u. 18.,</a> Telefon: <a href="tel:+3603636453">+36 1 363-6453</a><br><br>
+      <p>Adószám: 25028670-2-42</p>
+      <a href="mailto:ingatland@igazinfo.hu" class="btn btn-primary">Írjon nekünk</a>
+  </div>
+  <div class="card-footer text-muted">©2023 Minden jog fenntartva, Készítette: Tóth Károly</div>
+</div>
+
+  <!-- Modals-->
+
+  <!-- Modal bejelentkezés
+  <div id="myModal" class="modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Bejelentkezés</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <input type="text" class="form-control" placeholder="Azonosító" id="nameInput" required>
+          <input type="email" class="form-control" placeholder="Jelszó" id="emailInput"required>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" onclick="belepes()">Belépés</button>
+          <button type="button" class="btn btn-primary">Elfelejtett jelszó</button>
+          <button type="button" class="btn btn-secondary">Regisztráció</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+                                        -->
+
+  <!-- Modal "tevékenységünkről"-->
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">TEVÉKENYSÉGÜNKRŐL</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          A társasházakról szóló 2003. Évi CXXXIII. Törvény meghatározza azon teendőket, melyeket a társasházak
+          működtetése során el kell végezni. Fő feladata a fenntartás, üzemeltetés, karbantartás, felújítás ill. a
+          rendes gazdálkodást is meghaladó kiadások koordinálása, a társasház működtetése és vezetése.
+          A közös képviselő munkáját Számvizsgáló Bizottság segíti és ellenőrzi. A társasház bankszámlái felett a közös
+          képviselő mellett, aláírási joggal a Számvizsgáló Bizottság tagjai rendelkeznek. <br>
+          A közös képviselőnek mindenek elött rendelkeznie kell a Társasház törzslapjával. Az adottságok ismeretében a
+          Társasházi törvény valamint az Alapító Okirat, Szervezeti Működési Szabályzat előírásait figyelembe véve kell
+          megtervezni a társasház költségvetését és ez alapján kezelését, működését.
+          Az eddig közös képviselőként benyújtott pályázatok (Pl.: korszerűsítési, Panel pályázat) száma és
+          eredményessége:
+          Minden évben az elszámoló közgyűlések alkalmával tervezzük meg a költségvetést. Ennek szerves része a
+          mindenkori önkormányzati - felújítási pályázatokon való részvétel, feltétele az önrész felújítási számlán való
+          lekötése. <br> <br>
+
+          Pályázati munkáink: <br>
+          Strang felújítás, homlokzat felújítások, függőleges alapszigetelés, erkély felújítások, tetőszigetelés,
+          gázvezeték teljes felújítás, (következő felújítási pályázatunk: Panel építésű házunkban, a hőmennyiségmérők
+          felszerelése lesz.)
+
+          24 órás elérhetőséggel rendelkezünk, s ennek formái:
+          Telefon, fax, üzenetrögzítő, E-mail. <br>
+          Irodánkban hétfőn, délután 13 - 18 óráig és csütörtök délelőtt, 8 - 12 óráig fogadóórát tartunk.
+          Igény esetén a társasház közösségi szobájában is elérhetik a társasház képviselőjét. <br>
+
+          A könyvelés módja: <br>
+          Saját fejlesztésű számítógépes programmal történik, így minden házra egyedileg tudjuk igazítani a szükséges
+          kimutatásokat, bizonylatokat. <br><br>
+
+          TEVÉKENYSÉGÜNK FŐBB PONTOKBAN. <br>
+          1. A társasház Törzslapjának elkészítése: <br>
+
+          2. A társasház legfőbb jellemzőinek felmérése: <br>
+          Az épület alapjellemzői
+          Teherhordó szerkezetek
+          Az épület műszaki állapota
+          Épületgépészet
+          Épület környezeti adottságai
+          Az épület használhatósági foka
+          A tulajdonosok összetétele
+          Ház állapota, műszaki felmérés <br>
+
+          3. Pénzügyi dokumentumok kezelése: <br>
+          Bankkivonatok
+          - üzemeltetési számla (a számlák kiegyenlítése lehetőség szerint átutalással történjen);
+          - felújítási számlakezelés <br>
+          Üzemeltetési számlához tartozó csekkfüzet kezelése <br>
+          Bevételi pénztárbizonylatok kezelése <br>
+          Kiadási pénztárbizonylatok kezelése <br>
+          Naplófőkönyv tételes vezetése <br>
+          Analitikus nyilvántartások: <br>
+          - beérkező és kimenő számlák <br>
+          - tulajdonosok befizetési kötelezettségei és teljesítésük (kérés szerint havonkénti vagy negyedévenkénti
+          egyenlegközléssel) <br>
+          - adóhatósággal kapcsolatos dokumentumok kezelése <br>
+          - pénzintézettel kötött szerződések <br>
+          A Számvizsgáló Bizottság valamint a tulajdonosok a napra kész könyvelésbe bármikor betekinthetnek. <br>
+
+          4. Üzemeltetéssel kapcsolatos feladatok: <br>
+          - Társasház anyagi helyzetének stabilizálása <br>
+          - előző év bázisszámain alapuló, alapos költségvetés készítése <br>
+          - kintlévőségek behajtása (felszólítás, ügyvédi felszólítás, bírósági behajtás) <br>
+          - bérleti díjak beszedése (pl.: táblabérlet, helység kiadás stb., az elosztandó költségek csökkentése
+          érdekében) <br>
+          - a vízórával nem rendelkező tulajdonosok vízfogyasztásának vizsgálata pl. fő/Ft/hó, m2/Ft/hó,
+          tul.hányad/Ft/hó <br>
+          - egyéni közüzemi mérőórával (hidegvíz, melegvíz, fűtés) rendelkezők részére havi fizetési kötelezettség
+          postázása. <br>
+          Minden évben az elszámoló közgyűlések alkalmával tervezzük meg a költségvetést. Ennek szerves része a
+          mindenkori önkormányzati felújítási pályázatokon való részvétel, melynek feltétele az önrész felújítási
+          számlán való lekötése. <br>
+
+          5. Műszaki feladatok meghatározása, dokumentációk kezelése:
+          A társasház gépészeti avulásáról pontos felmérés, prioritásnak megfelelő kiviteli sorrend felállítása.
+          Természetesen a műszaki munkák kivitelezőitől árajánlatok bekérése után, a Számvizsgáló Bizottsággal dönti el
+          a közös képviselő, hogy melyik kivitelező árajánlatát fogadják el. (Szerződés szerinti 10%.-os jó teljesítési
+          garanciával!) <br>
+          Műszaki dokumentációk kezelése: <br>
+          - tervrajzok, szakvélemények, jegyzőkönyvek <br>
+          - a Társasház alapító okiratának műszaki terv dokumentációja <br>
+          - építészeti, gépészeti tervrajzok <br>
+          - tűzvédelmi terv elkészíttetése <br>
+          - érintésvédelem <br>
+
+          6. Működési feladatok: <br>
+          A tulajdonosi közösséggel kapcsolatbakerülő kivitelezők és más (pl. takarító, gondnok, kertész stb.)
+          vállalkozókkal a szerződések megkötése, felülvizsgálata és nyomon követése. <br>
+          Működési dokumentációk kezelése: <br>
+          - a Társasház alapító okirata <br>
+          - szervezeti-működési szabályzat <br>
+          - közgyűlési meghívók, jegyzőkönyvek, jelenléti ívek, meghatalmazások <br>
+          - tulajdonosi nyilvántartás <br>
+          - szerződések: közművek, biztosítás, munka, bérleti szerződés, <br>
+          - adóhatósági - bírósági anyagok, fizetési meghagyások <br>
+          - levelezés <br>
+          Fő feladat: A tulajdonos közösséggel kapcsolatba kerülő kivitelezők és más (pl. takarító) vállalkozókkal a
+          szerződések megkötése, felülvizsgálata és nyomon követése. <br>
+
+          7. Vállalási ár: <br>
+          A fenti feladatok ellátását, a teljes körű képviseletet a számviteli nyilvántartással, könyveléssel együtt
+          havonta és albetétenként, a társasház tulajdonosainak számától függően vállaljuk. <br><br>
+
+
+          Reméljük, hogy tevékenységünkről szóló bemutatónk elnyeri tetszésüket, és nem csak írásban bizonyíthatjuk
+          szakmai tudásunkat.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Bezár</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
